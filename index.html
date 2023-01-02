@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animate CSS JS</title>
+    <!--Icon-->
+    <link rel="shortcut icon" href="./img/logo.png"/>
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/rain.css" />
+    <link rel="stylesheet" href="./css/clock.css" />
+    <link rel="stylesheet" href="./css/mario.css" />
+    <link rel="stylesheet" href="./css/road.css" />
+    <link rel="stylesheet" href="./css/rocket.css" />
+    <link rel="stylesheet" href="./css/book.css">
+  </head>
+  <body>
+    <div
+      class="container"
+      data-0="transform:translateX(0%);"
+      data-400="transform:translateX(-400%);
+      transition: transform 750ms ease-in-out;"
+    >
+      <!--Rain Animation-->
+      <section>
+        <div class="contentOne">
+          <div class="cloud"></div>
+          <div class="rain">
+            <span style="--i: 11"></span>
+            <span style="--i: 12"></span>
+            <span style="--i: 10"></span>
+            <span style="--i: 14"></span>
+            <span style="--i: 18"></span>
+            <span style="--i: 16"></span>
+            <span style="--i: 19"></span>
+            <span style="--i: 20"></span>
+            <span style="--i: 10"></span>
+            <span style="--i: 16"></span>
+            <span style="--i: 14"></span>
+            <span style="--i: 18"></span>
+            <span style="--i: 11"></span>
+            <span style="--i: 13"></span>
+            <span style="--i: 15"></span>
+            <span style="--i: 12"></span>
+            <span style="--i: 17"></span>
+            <span style="--i: 13"></span>
+            <span style="--i: 15"></span>
+          </div>
+        </div>
+      </section>
+
+      <!--O'Clock-->
+      <section>
+        <div class="clock">
+          <div class="hour">
+            <div class="hr" id="hr"></div>
+          </div>
+          <div class="min">
+            <div class="mn" id="mn"></div>
+          </div>
+          <div class="sec">
+            <div class="sc" id="sc"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--Mario Roulette Game-->
+      <section>
+        <div class="contentTwo">
+          <h2>Mario roulette game</h2>
+          <div class="box">
+            <label>
+              <input type="checkbox" class="checkbox" id="check1" />
+              <i></i>
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" id="check2" />
+              <i></i>
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox" id="check3" />
+              <i></i>
+            </label>
+          </div>
+          <button class="reset">Reiniciar juego</button>
+        </div>
+      </section>
+
+      <!--Taxi Drive Animation-->
+      <section>
+        <div class="contentThree">
+          <div class="road">
+            <div class="taxi">
+              <div class="luces"></div>
+              <span>
+                <b></b>
+                <i></i>
+              </span>
+            </div>
+            <div class="taxi">
+              <div class="luces"></div>
+              <span>
+                <b></b>
+                <i></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Rocket Animation-->
+      <section>
+        <div class="scene">
+          <div class="rocket">
+            <img src="./img/rocket.png" alt="" />
+          </div>
+        </div>
+      </section>
+  
+    <!--JavaScript-->
+    <script type="text/javascript" src="./js/skrollr.js"></script>
+    <script type="text/javascript" src="./js/mario.js"></script>
+    <script type="text/javascript" src="./js/reloj.js"></script>
+    <script src="./js/rocket.js"></script>
+    <script src="./js/book.js"></script>
+    <script type="text/javascript">
+      var s = skrollr.init();
+    </script>
+  </body>
+</html>
